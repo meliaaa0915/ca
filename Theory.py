@@ -7,6 +7,7 @@ root = Tk()
 root.title('Centre of mass theory')
 root.geometry('800x600')
 
+
 c = Canvas(root,width=800,height=500)
 c.pack()
 
@@ -16,7 +17,8 @@ photoImg = ImageTk.PhotoImage(img)
 panel = Label(root,image=photoImg)
 panel.place(x=500,y=0)
 
-
+b= Button(root, text='hola')
+b.place(x=10,y=50)
 l1 = Label(root, text='What is the Centre of Mass ?',font=('Georgia',20))
 l1.place(x=10,y=30)
 
