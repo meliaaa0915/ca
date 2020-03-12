@@ -7,7 +7,7 @@ root2 = Tk()
 root2.title('Centre of mass calculator')
 root2.geometry('800x500')
 root2.configure(background='#FBF6D9')
-# fenjdas
+
 
 global h1
 def h1():
