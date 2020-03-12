@@ -30,7 +30,7 @@ l3 = Label(root, text='Equation of the centre of mass',font=('Georgia',20))
 l3.place(x=10,y=300)
 
 l4 = Label(root, text='m  × x   + m   × x   ',font=('Georgia',15)) 
-l4.place(x=100,y=350)
+l4.place(x=90,y=350)
 
 c.create_line(95,384,275,384)
 
