@@ -1,7 +1,6 @@
 from Tkinter import *
 from tkMessageBox import * 
 from PIL import ImageTk, Image
-import math
 
 global raise_frame
 def raise_frame(frame):
@@ -61,6 +60,10 @@ photoImg = ImageTk.PhotoImage(img)
 global new
 def new():
     global panel
+    global b5
+    global b1
+    b5.config(state=DISABLED)
+    b1.config(state=DISABLED)
     new = Toplevel()
     new.config(background= '#B7CEEC')
     new.geometry('660x400')
@@ -81,7 +84,12 @@ the object will topple',font=('Georgia',13),bg='#B7CEEC')
     inl4 = Label(new,text='3. The vertical line of centre \n of mass has exceeded the \n object base, hence it topples',font=('Georgia',11),bg='#B7CEEC')
     inl4.place(x=460,y=290)
 
-    inb1 = Button(new,text='Back',font=('Georgia',11),bg='Red',command=new.destroy)
+    def abc():
+        new.destroy()
+        b5.config(state=NORMAL)
+        b1.config(state=NORMAL)
+
+    inb1 = Button(new,text='Back',font=('Georgia',11),bg='Red',command=abc)
     inb1.place(x=300,y=360)
     
 global check
