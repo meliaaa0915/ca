@@ -60,6 +60,7 @@ photoImg = ImageTk.PhotoImage(img)
 global new
 def new():
     global panel
+    global photoImg
     global b5
     global b1
     b5.config(state=DISABLED)
