@@ -64,7 +64,7 @@ def cal():
     if a == '' or b == '' or c=='':
         showinfo('Warning','Please input a number')
 
-    elif a.isalpha() == True or b.isalpha() == True or c.isalpha() == True:
+    elif a.isdigit() == False or b.isdigit() == False or c.isdigit() == False:
         showinfo('Warning','Please ensure that you have entered a valid number')
 
     else:
@@ -73,8 +73,8 @@ def cal():
 
         fa = v1/v2
         
-        la.config(text= 'Centre of Mass  = '+ '('+str(a)+' × 0 ' + ' +  ' + str(b)+' × ' + str(c)+')'+
-                  ' ÷ ' + '('+ str(a) + ' + ' + str(b)+')')
+        la.config(text= 'Centre of Mass  = '+ '('+str(a)+' Ã— 0 ' + ' +  ' + str(b)+' Ã— ' + str(c)+')'+
+                  ' Ã· ' + '('+ str(a) + ' + ' + str(b)+')')
 
         la1 = Label(root2,text='=',bg='#FBF6D9',fg='black',font=('Georgia',15))
         la1.place(x=295,y=430)
