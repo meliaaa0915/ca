@@ -37,7 +37,9 @@ def p3():
   
 def q():
     global root1
-    root1.destroy()
+    aq = askquestion('Leaving?','Are you sure you want to quit?')
+    if aq == "yes":
+        root1.destroy()
 
 b4 = Button(root1,text='What is Centre of Mass?',font=('Georgia',15),fg='WHITE',bg='#151B54',width = 25, height=1,command=p4)
 b4.place(x=230,y=130)
