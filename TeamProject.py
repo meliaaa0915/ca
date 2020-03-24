@@ -344,4 +344,16 @@ b8.place(x=1150,y=600)
 b8 = Button(f3,text='Return back to home screen',width = 25, height=2, bg='red',fg='black',font=('Georgia',15), command=back)
 b8.place(x=1150,y=600)
 
+def p3():
+    global root
+    root.destroy()
+    execfile('Free.py')
+    
+b33 = Button(f1, text='Freedom Universe',font=('Georgia',15),fg='black',bg='#488AC7', height=2,command=p3)
+b33.place(x=1205,y=600)
+b33 = Button(f2, text='Freedom Universe',font=('Georgia',15),fg='black',bg='#488AC7', height=2,command=p3)
+b33.place(x=1205,y=600)
+b33 = Button(f3, text='Freedom Universe',font=('Georgia',15),fg='black',bg='#488AC7', height=2,command=p3)
+b33.place(x=1205,y=600)
+
 root.mainloop()
