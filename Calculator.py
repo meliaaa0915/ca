@@ -72,6 +72,7 @@ def cal():
         v2 = float(a)+float(b)
 
         fa = v1/v2
+        fa = round(fa,2)
         
         la.config(text= 'Centre of Mass  = '+ '('+str(a)+' × 0 ' + ' +  ' + str(b)+' × ' + str(c)+')'+
                   ' ÷ ' + '('+ str(a) + ' + ' + str(b)+')')
