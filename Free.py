@@ -123,6 +123,7 @@ def cal():
     j = float(h*i)
     k = float(g+h)
     l = float(j/k)
+    l = round(l,2)
     l5.config(text= 'Centre of Mass = ' + str(l) + 'm')
     
 
