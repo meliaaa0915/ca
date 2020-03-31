@@ -69,6 +69,7 @@ def cal2():
         b = float(300000*s)
         ca = 1000000+300000
         d = float((a+b)/ca)
+        d = round(d,2)
         la2 = Label(f2, text = 'Centre of mass = ' + str(d) +' km' ,fg='white', bg='black',font=('Georgia',15))
         la2.place(x=500,y=380)
         lla2 = True
@@ -86,6 +87,7 @@ def cal2():
         b = float(300000*s)
         ca = 1000000+300000
         d = float((a+b)/ca)
+        d = round(d,2)
         la2 = Label(f2, text = 'Centre of mass = ' + str(d) +' km' ,fg='white', bg='black',font=('Georgia',15))
         la2.place(x=500,y=380)
         lla2= True
@@ -152,6 +154,7 @@ def cal3():
         b = float(400000*s)
         ca = 1000000+400000
         d = float((a+b)/ca)
+        d = round(d,2)
         la3 = Label(f3, text = 'Centre of mass = ' + str(d) +' km' ,fg='white', bg='black',font=('Georgia',15))
         la3.place(x=500,y=380)
         lla3 = True
@@ -169,6 +172,7 @@ def cal3():
         b = float(400000*s)
         ca = 1000000+400000
         d = float((a+b)/ca)
+        d = round(d,2)
         la3 = Label(f3, text = 'Centre of mass = ' + str(d) +' km' ,fg='white', bg='black',font=('Georgia',15))
         la3.place(x=500,y=380)
         lla3= True
@@ -234,6 +238,7 @@ def cal1():
         b = float(200000*s)
         ca = 1000000+200000
         d = float((a+b)/ca)
+        d = round(d,2)
         la1 = Label(f1, text = 'Centre of mass = ' + str(d) +' km' ,fg='white', bg='black',font=('Georgia',15))
         la1.place(x=500,y=350)
         lla1 = True
@@ -252,6 +257,7 @@ def cal1():
         b = float(200000*s)
         ca = 1000000+200000
         d = float((a+b)/ca)
+        d = round(d,2)
         la1 = Label(f1, text = 'Centre of mass = ' + str(d) +' km' ,fg='white', bg='black',font=('Georgia',15))
         la1.place(x=500,y=350)
         lla1 = True
