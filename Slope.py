@@ -94,6 +94,7 @@ the object will topple',font=('Georgia',13),bg='#B7CEEC')
     inb1 = Button(new,text='Back',font=('Georgia',11),bg='Red',command=abc)
     inb1.place(x=300,y=360)
 
+global ver
 ver = [[250,235],[347,375],[435,185]]
 global check
 def check():
