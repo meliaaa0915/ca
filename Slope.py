@@ -1,6 +1,7 @@
 from Tkinter import *
 from tkMessageBox import * 
 from PIL import ImageTk, Image
+from math import *
 
 global raise_frame
 def raise_frame(frame):
@@ -92,7 +93,8 @@ the object will topple',font=('Georgia',13),bg='#B7CEEC')
 
     inb1 = Button(new,text='Back',font=('Georgia',11),bg='Red',command=abc)
     inb1.place(x=300,y=360)
-    
+
+ver = [[250,235],[347,375],[435,185]]
 global check
 def check():
     global t1
@@ -116,12 +118,25 @@ def check():
         b4.destroy()
         s1.destroy()
         l2.destroy()
-        for i in range(550):
+        for angle in range(85):
             c2.delete(t2)
             c2.delete(line)
-            t2 = c2.create_polygon(170+a+(i/2.2),(270-a/2)+i/15,310+(a/2),(385-(a/9)),330+(1.4*a)+i/7.5,(198-(a/3))+10+i/2,fill='black')
+            angle = radians(angle)
+            co = cos(angle)
+            si = sin(angle)
+            cx , cy = 347 , 375
+            new_points = []
+            for x_old, y_old in ver:
+                x_old -= cx
+                y_old -= cy
+                x_new = x_old * co - y_old * si
+                y_new = x_old * si + y_old * co
+                new_points.append([x_new + cx, y_new + cy])       
+
+            t2 = c2.create_polygon(new_points,fill='black')
+
             c2.update()
-            c2.after(1)
+            c2.after(10)
     
 
             def reset():
